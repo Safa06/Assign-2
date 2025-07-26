@@ -40,7 +40,7 @@
 
 .plants-section .plants-lover,
 .header-section,
-.navbar {
+.navbar,.footer-section {
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
@@ -260,6 +260,28 @@ li>a {
 
 
 
+/* footer-section */
+.footer-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 100px;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    column-gap: 30px;
+}
+.footer-links a{
+    list-style: none;
+    text-decoration: none;
+}
+.footer-logo{
+    display: flex;
+    gap: 20px;
+}
+
+
 
 /* responsive for mobile device */
 @media screen and (min-width: 576px) and (max-width: 640px) {
@@ -367,6 +389,17 @@ li>a {
         height: 200px;
     }
 
+
+    /* footer-section */
+    .footer-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 20px;
+    }
+    .footer-links{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
 
 
 
