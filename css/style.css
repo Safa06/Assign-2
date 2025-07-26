@@ -16,6 +16,7 @@
 
 .gray-text {
     color: gray;
+    margin-bottom: 30px;
 }
 
 .mar-top {
@@ -69,6 +70,7 @@ li>a {
 
 .plants-section {
     text-align: center;
+    /* border: 2px solid red; */
 
 }
 
@@ -104,11 +106,11 @@ li>a {
     width: 100%;
     margin: 0;
     padding: 0; */
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: center;
     /* border: 2px solid red; */
-    padding:0 150px;
+    padding: 0 150px;
 
 
 }
@@ -116,37 +118,96 @@ li>a {
 
 /* plants-lover-section */
 
-.plants-lover{
-    gap: 150px; 
-    margin-top: 150px; 
+.plants-lover {
+    gap: 150px;
+    margin-top: 150px;
 }
-.plants-lover-img{
+
+.plants-lover-img {
     width: 40%;
     height: 500px;
 }
-.plants-lover-ul{
+
+.plants-lover-ul {
     margin: 30px;
 }
 
-.plants-lover-li{
+.plants-lover-li {
     margin-top: 15px;
     list-style-type: disc;
-    
+
 }
 
 /* latest deals section */
 
-.deals{
-    border: 2px solid red;
+.deals {
     margin: 0;
-    padding: 0;
+    /* border: 2px solid red; */
+    width: 100%;
+    padding:0 150px;
 }
-.deals-img-1{
-   padding: 0;
-   margin: 10px 0;
-   border-radius: 10px;
+.hello{
+    /* border: 2px solid blue; */
+    width: 100%;
+    
 }
-
+.deals-img-1-1{
+    background-image:linear-gradient(rgba(0,0,0, 0.6)), url("../deal-ana.png");
+    /* filter: brightness(60%); */
+    border-radius:20px;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+    width:80%;
+    height: 200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  
+}
+.deals-img-1-2{
+    background-image:linear-gradient(rgba(0,0,0, 0.6)), url("../assets/deal-bloom.png");
+    /* filter: brightness(60%); */
+    border-radius:20px;
+    margin-bottom: 10px;
+    /* border: 2px solid red; */
+    background-size: 100% 100%;
+    height: 200px;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  
+}
+.deals-img-1-3{
+    background-image:linear-gradient(rgba(0,0,0, 0.6)), url("../assets/deal-zabo.png");
+    /* filter: brightness(60%); */
+    border-radius:20px;
+    height: 420px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  
+}
+.underline{
+    text-decoration: underline;
+}
 
 
 
@@ -198,10 +259,12 @@ li>a {
     }
 
     /* plants-section */
-    .plants-section{
+    .plants-section {
         width: 100%;
         padding: 0 15px;
+        
     }
+
     .card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -209,30 +272,47 @@ li>a {
         padding: 0 10px;
     }
 
-    .plants-h1{
+    .plants-h1 {
         font-size: 30px;
     }
+
     .plants-h2 {
         font-size: 20px;
     }
 
-    
-/* plants-lover-section */
-.plants-lover-li{
-    margin-top: 10px;
 
-}
-.flex-col-reversenot{
-    flex-direction: column;
-}
-.plants-lover{
-    gap: 20px;
-}
-.plants-lover-img{
-    width: 100%;
-    height: 500px;
-    padding: 0 20px;
-}
+    /* plants-lover-section */
+    .plants-lover-li {
+        margin-top: 10px;
+
+    }
+
+    .flex-col-reversenot {
+        flex-direction: column;
+    }
+
+    .plants-lover {
+        gap: 20px;
+    }
+
+    .plants-lover-img {
+        width: 100%;
+        height: 500px;
+        padding: 0 20px;
+    }
+
+    /* latest deals section */
+    .flex-dir {
+        flex-direction: column;
+    }
+    .deals-img-1-1,.deals-img-1-2,.deals-img-1-3{
+        width:100%;
+        text-align: center;
+    }
+    .deals-img-1-3{
+        height: 200px;
+    }
+
 
 
 
