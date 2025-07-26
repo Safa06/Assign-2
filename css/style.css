@@ -40,20 +40,32 @@
 
 .plants-section .plants-lover,
 .header-section,
-.navbar,.footer-section {
+.navbar,
+.footer-section {
     max-width: 1440px;
     margin: 0 auto;
     width: 100%;
 }
 
+.navbar {
+    /* border: 2px solid red; */
+    padding-right: 0;
+
+}
+
 li {
     list-style-type: none;
+    /* border: 2px solid orange; */
 }
 
 li>a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    /* margin-left: 20px;
+    border: 2px solid blue;
+    padding-right: 10px; */
+
 
 }
 
@@ -92,7 +104,7 @@ li>a {
 .plants-btn {
     background-color: #E95A08;
     color: white;
-    width: 75%;
+    width: 90%;
     font-size: 15px;
     font-weight: bold;
     padding: 10px;
@@ -261,24 +273,42 @@ li>a {
 
 
 /* footer-section */
-.footer-section{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 0 100px;
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 100px;
 }
-.footer-links{
+
+.footer-links {
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(2, 2fr);
     column-gap: 30px;
 }
-.footer-links a{
+
+.footer-links a {
     list-style: none;
     text-decoration: none;
 }
-.footer-logo{
+
+.footer-logo {
     display: flex;
     gap: 20px;
+}
+
+
+/* -------------trusted img---------------- */
+.trusted-img {
+    width: 15%;
+    height: 30%;
+    margin-top: -500px;
+    margin-left: -270px;
+    
+}
+
+.trusted-img:hover {
+    transition:  transform 700ms linear;
+    transform: rotate(360deg);
 }
 
 
@@ -367,6 +397,10 @@ li>a {
         gap: 20px;
     }
 
+    .plants-btn {
+        width: 100%;
+    }
+
     .plants-lover-img {
         width: 100%;
         height: 500px;
@@ -391,14 +425,23 @@ li>a {
 
 
     /* footer-section */
-    .footer-section{
+    .footer-section {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         margin-bottom: 20px;
     }
-    .footer-links{
+
+    .footer-links {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .trusted-img {
+        visibility: hidden;
+        margin-top: 0px;
+        margin-left: 0px;
+
     }
 
 
